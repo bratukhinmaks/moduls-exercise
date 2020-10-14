@@ -1,16 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import {BrowserModule} from '@angular/platform-browser';
+import {AppComponent} from './app.component';
+import { LandingComponent } from './shared/components/landing/landing.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
+import { OpenModuleDirective } from './open-module.directive';
 
-import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, LandingComponent, ErrorPageComponent, HomeComponentComponent, OpenModuleDirective],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

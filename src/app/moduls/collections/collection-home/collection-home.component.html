@@ -1,0 +1,8 @@
+<div class="container">
+  <app-divider [title]="'Table component'"></app-divider>
+  <button class='ui button green'(click)="striped =!striped">Spripe toggle</button>
+  <app-table [headers]="headers" [data]="data" [striped]="striped"></app-table>
+  <hr>
+  <app-divider [title]="'Tabs component'"></app-divider>
+  <app-tabs></app-tabs>
+</div>

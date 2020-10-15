@@ -1,0 +1,12 @@
+<div class="ui grid">
+  <div class="four wide column">
+    <div class=" ui vertical fluid tabular menu">
+      <a  class="item" (click)="current = i" [class.active]="current === i" *ngFor="let header of headers; let i = index">{{header.title}}</a>
+    </div>
+  </div>
+  <div class="twelve wide stretched column">
+    <div class="ui segment" *ngFor="let post of posts">
+      {{post[headers[current].key]}}
+    </div>
+  </div>
+</div>

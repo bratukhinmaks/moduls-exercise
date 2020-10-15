@@ -1,0 +1,23 @@
+<div class="container">
+  <app-divider [title]="'PlaceHolder component'"></app-divider>
+  <div class="form-group">
+    <button class="ui inverted green button" (click)="headerState= true">On</button>
+    <button class="ui inverted red button" (click)="headerState= false">Off</button>
+  </div>
+  <div class="form-group">
+    <label>Provide number of lines</label>
+    <input class="input" [(ngModel)]="linesNumber" placeholder="Provide number of lines">
+  </div>
+  <app-placeholder [header]="headerState" [lines]="linesNumber"></app-placeholder>
+  <hr>
+  <app-divider [title]="'Segment component'"></app-divider>
+  <app-segment>
+    <header>
+    <i class="pdf file outline icon"></i>
+    No documents are listed for this customer.
+      </header>
+    <div class="ui primary button">Add Document</div>
+  </app-segment>
+
+</div>
+

@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./elements-home.component.css']
 })
 export class ElementsHomeComponent implements OnInit {
+  headerState: boolean;
+  linesNumber: number;
 
   constructor() { }
 
